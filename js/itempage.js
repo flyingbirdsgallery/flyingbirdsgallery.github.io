@@ -18,9 +18,12 @@
         $('#carousel').on('slid.bs.carousel', function () {
             var $img = $('.carousel div.active img'),
                 imgNumber = $img.data('imgnumber');
-            console.log('imgnumber', imgNumber);
             // console.log(evt.relatedTarget);
             window.location.hash = '#' + imgNumber;
+
+            $img.on('click', function(){
+                $.colorbox({href: $(this).attr('src')});
+            });
         });
     });
 }());
