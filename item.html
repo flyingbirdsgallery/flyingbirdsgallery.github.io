@@ -20,7 +20,7 @@ title: Item
                 {% else %}
             <div class="item">
                 {% endif %}
-                <img class="img-responsive center-block" src="{{ "/images/portfolio/" | prepend: site.baseurl }}{{ img.image.name }}" alt="{{ img.image.name }}" />
+                <img class="img-responsive center-block" src="{{ "/images/portfolio/" | prepend: site.baseurl }}{{ img.image.name }}" alt="{{ img.image.name }}" data-imgnumber="{{ img.number }}"/>
                 <!-- <div class="carousel-caption">
                     ...
                 </div> -->
