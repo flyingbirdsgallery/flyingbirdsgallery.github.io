@@ -17,8 +17,8 @@ title: Portfolio
         {% endif %}
 
                         <div class="col-xs-4">
-                            <a href="#" class="thumbnail">
-                                <img src="{{ "/images/portfolio/thumbnails/" | prepend: site.baseurl }}{{img.thumbnail.name}}" width="{{ img.thumbnail.width}}" height="{{img.thumbnail.height}}" alt="{{img.thumbnail.name}}" title="click for details" />
+                            <a href="{{ "/item.html?img=" | prepend: site.baseurl }}{{ img.number }}" class="thumbnail">
+                                <img src="{{ "/images/portfolio/thumbnails/" | prepend: site.baseurl }}{{ img.thumbnail.name }}" width="{{ img.thumbnail.width }}" height="{{ img.thumbnail.height }}" alt="{{ img.thumbnail.name }}" title="click for details" />
                             </a>
                         </div>
 

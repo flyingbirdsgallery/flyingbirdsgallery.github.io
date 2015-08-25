@@ -58,6 +58,11 @@
         <li><a href="{{ "/index.html" | prepend: site.baseurl}}">Home</a></li>
         <li class="active">Contact</li>
         {% endif %}
+        {% if page.title == "Item" %}
+        <li><a href="{{ "/index.html" | prepend: site.baseurl}}">Home</a></li>
+        <li><a href="{{ "/portfolio.html" | prepend: site.baseurl}}">Portfolio</a></li>
+        <li class="active">Item</li>
+        {% endif %}
     </ol>
 
 </header>

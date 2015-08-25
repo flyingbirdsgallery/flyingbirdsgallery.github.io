@@ -7,9 +7,12 @@
         </div>
     </div>
 
-    <!-- js files go here -->
-    <script src="{{ "/js/lib/jquery/jquery-2.1.4.min.js" | prepend: site.baseurl }}" charset="utf-8"></script>
-    <script src="{{ "/js/lib/bootstrap/bootstrap.min.js" | prepend: site.baseurl }}" charset="utf-8"></script>
-    <script src="{{ "/js/lib/bootstrap/ie10-viewport-bug-workaround.js" | prepend: site.baseurl }}" charset="utf-8"></script>
-
 </footer>
+
+<!-- js files go here -->
+<script src="{{ "/js/lib/jquery/jquery-2.1.4.min.js" | prepend: site.baseurl }}" charset="utf-8"></script>
+<script src="{{ "/js/lib/bootstrap/bootstrap.min.js" | prepend: site.baseurl }}" charset="utf-8"></script>
+<script src="{{ "/js/lib/bootstrap/ie10-viewport-bug-workaround.js" | prepend: site.baseurl }}" charset="utf-8"></script>
+{% if page.title == 'Item' %}
+<script src="{{ "/js/querystring.js" | prepend: site.baseurl }}" charset="utf-8"></script>
+{% endif %}
