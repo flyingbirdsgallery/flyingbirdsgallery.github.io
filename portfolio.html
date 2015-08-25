@@ -5,6 +5,29 @@ title: Portfolio
 
 <div class="container">
 
-  <h1>Portfolio</h1>
+    {% for img in site.data.image-data.items %}
+        {% assign f= forloop.first %}
+        {% assign l = foorloop.rindex %}
+        {% assign r = forloop.index0 | modulo:3 %}
+
+        {% if r == 0 %}
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="row">
+        {% endif %}
+
+                        <div class="col-xs-4">
+                            <a href="#" class="thumbnail">
+                                <img src="{{ "/images/portfolio/thumbnails/" | prepend: site.baseurl }}{{img.thumbnail.name}}" width="{{ img.thumbnail.width}}" height="{{img.thumbnail.height}}" alt="{{img.thumbnail.name}}" title="click for details" />
+                            </a>
+                        </div>
+
+        {% if r == 2 or l == 0 %}
+                    </div>
+                </div>
+            </div>
+        {% endif %}
+
+    {% endfor %}
 
 </div>
