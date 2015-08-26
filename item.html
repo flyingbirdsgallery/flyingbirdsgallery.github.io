@@ -21,9 +21,11 @@ title: Item
             <div class="item">
                 {% endif %}
                 <img class="img-responsive center-block" src="{{ "/images/portfolio/" | prepend: site.baseurl }}{{ img.image.name }}" alt="{{ img.image.name }}" data-imgnumber="{{ img.number }}"/>
-                <!-- <div class="carousel-caption">
-                    ...
-                </div> -->
+                <div class="carousel-caption">
+                    <h4>Item #: <span>{{img.number}}</span></h4>
+                    <h4>Medium: <span>Oil</span></h4>
+                    <h4>Orientation: <span>{{img.orientation}}</span></h4>
+                </div>
             </div>
             {% endfor %}
         </div>
