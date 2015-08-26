@@ -20,7 +20,10 @@ title: Item
                 {% else %}
             <div class="item">
                 {% endif %}
-                <img class="img-responsive center-block" src="{{ "/images/portfolio/" | prepend: site.baseurl }}{{ img.image.name }}" alt="{{ img.image.name }}" data-imgnumber="{{ img.number }}"/>
+                <img class="img-responsive center-block"
+                src="{{ "/images/portfolio/" | prepend: site.baseurl }}{{ img.image.name }}"
+                alt="{{ img.image.name }}" data-imgnumber="{{ img.number }}"
+                title="Item#: {{img.number}}, Medium: Oil, Orientation: {{img.orientation}}"/>
                 <div class="carousel-caption">
                     <h4>Item #: <span>{{img.number}}</span></h4>
                     <h4>Medium: <span>Oil</span></h4>

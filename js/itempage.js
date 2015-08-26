@@ -23,7 +23,7 @@
             window.location.hash = '#' + imgNumber;
 
             $img.on('click', function(){
-                $.colorbox({href: $(this).attr('src')});
+                $.colorbox({href: $(this).attr('src'), title: $(this).attr('title')});
             });
         });
     });
