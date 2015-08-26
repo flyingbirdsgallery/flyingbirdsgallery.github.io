@@ -7,24 +7,32 @@
     // }
 
     $(function(){
-        var imgNumber = parseInt(parseInt(window.location.hash.substring(1))) - 1,
-            $c = $('.carousel');
+        var imgNumber = parseInt(parseInt(window.location.hash.substring(1))),
+            $c = $('.carousel'),
+            $items = $('.carousel-inner .item');
 
         // initialize the carousel
         $c.carousel({interval: false});
-        // jump to the right image to display and stop cycling images
-        $c.carousel(imgNumber);
 
-        //
+        // set the item that relates to the url hash value as active
+        $items.each(function(){
+            var $this = $(this);
+            if($this.data('imgnumber') === imgNumber){
+                $this.addClass('active');
+            }
+            // set img click handler to display in colorbox
+            $this.find('img').on('click', function(){
+                $.colorbox({href: $(this).attr('src'), title: $(this).attr('title')});
+            });
+        });
+
+        // event handler for the slid.bs.carousel event
         $('#carousel').on('slid.bs.carousel', function () {
             var $img = $('.carousel div.active img'),
                 imgNumber = $img.data('imgnumber');
-            // console.log(evt.relatedTarget);
-            window.location.hash = '#' + imgNumber;
 
-            $img.on('click', function(){
-                $.colorbox({href: $(this).attr('src'), title: $(this).attr('title')});
-            });
+            // set the window location's hash
+            window.location.hash = '#' + imgNumber;
         });
     });
 }());

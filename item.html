@@ -15,11 +15,7 @@ title: Item
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
             {% for img in site.data.image-data.items %}
-                {% if forloop.index0 == 0 %}
-            <div class="item active">
-                {% else %}
-            <div class="item">
-                {% endif %}
+            <div class="item" data-imgnumber="{{img.number}}">
                 <img class="img-responsive center-block"
                 src="{{ "/images/portfolio/" | prepend: site.baseurl }}{{ img.image.name }}"
                 alt="{{ img.image.name }}" data-imgnumber="{{ img.number }}"
