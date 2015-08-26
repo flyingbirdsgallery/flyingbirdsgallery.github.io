@@ -10,8 +10,9 @@
         var imgNumber = parseInt(parseInt(window.location.hash.substring(1))) - 1,
             $c = $('.carousel');
 
-        // initialize the carousel - jump to the right image to display and stop cycling images
+        // initialize the carousel
         $c.carousel({interval: false});
+        // jump to the right image to display and stop cycling images
         $c.carousel(imgNumber);
 
         //
