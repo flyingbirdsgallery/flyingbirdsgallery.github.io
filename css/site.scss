@@ -16,3 +16,11 @@ footer {
 .carousel-inner img {
     cursor: pointer;
 }
+
+.news header {
+    margin-bottom: 30px;
+}
+
+.news p {
+    @extend .lead;
+}

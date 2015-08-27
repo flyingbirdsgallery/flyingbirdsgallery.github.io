@@ -39,28 +39,33 @@
     </nav>
 
     <ol class="breadcrumb">
+        {% if page.newsitem == true %}
+        <li><a href="{{ "/index.html" | prepend: site.baseurl }}">Home</a></li>
+        <li><a href="{{ "/news.html" | prepend: site.baseurl }}">News</a></li>
+        <li class="active">News Item</li>
+        {% endif %}
         {% if page.title == "Flying Birds Gallery" %}
         <li class="active">Home</li>
         {% endif %}
         {% if page.title == "About" %}
-        <li><a href="{{ "/index.html" | prepend: site.baseurl}}">Home</a></li>
+        <li><a href="{{ "/index.html" | prepend: site.baseurl }}">Home</a></li>
         <li class="active">About</li>
         {% endif %}
         {% if page.title == "Portfolio" %}
-        <li><a href="{{ "/index.html" | prepend: site.baseurl}}">Home</a></li>
+        <li><a href="{{ "/index.html" | prepend: site.baseurl }}">Home</a></li>
         <li class="active">Portfolio</li>
         {% endif %}
         {% if page.title == "News" %}
-        <li><a href="{{ "/index.html" | prepend: site.baseurl}}">Home</a></li>
+        <li><a href="{{ "/index.html" | prepend: site.baseurl }}">Home</a></li>
         <li class="active">News</li>
         {% endif %}
         {% if page.title == "Contact" %}
-        <li><a href="{{ "/index.html" | prepend: site.baseurl}}">Home</a></li>
+        <li><a href="{{ "/index.html" | prepend: site.baseurl }}">Home</a></li>
         <li class="active">Contact</li>
         {% endif %}
         {% if page.title == "Item" %}
-        <li><a href="{{ "/index.html" | prepend: site.baseurl}}">Home</a></li>
-        <li><a href="{{ "/portfolio.html" | prepend: site.baseurl}}">Portfolio</a></li>
+        <li><a href="{{ "/index.html" | prepend: site.baseurl }}">Home</a></li>
+        <li><a href="{{ "/portfolio.html" | prepend: site.baseurl }}">Portfolio</a></li>
         <li class="active">Item</li>
         {% endif %}
     </ol>

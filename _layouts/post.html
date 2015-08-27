@@ -1,15 +1,18 @@
 ---
 layout: default
 ---
-<div class="post">
 
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-  </header>
-
-  <article class="post-content">
-    {{ content }}
-  </article>
-
+<div class="container news">
+    <header class="text-center">
+        <h1 >{{ page.title }}</h1>
+    </header>
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <article>
+                <img src="{{ "/images/" | prepend: site.baseurl }}{{ page.img }}" width="64" height="64"/>
+                    <h4>{{ page.date | date: "%b %-d, %Y" }}</h4>
+                    {{ content }}
+            </article>
+        </div>
+    </div>
 </div>

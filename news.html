@@ -4,84 +4,20 @@ title: News
 ---
 
 <div class="container">
-
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
-            <article class="news">
-                <img src="{{"/images/artshow.jpg" | prepend: site.baseurl}}" width="64" height="64" alt="painting updates">
-
-                <div>
-                    <h4>August 26, 2015</h4>
-
-                    <p class="lead">I am very excited to anounce that my gallery is now being hosted on Github IO (whatever that means lol) and has been redisigned with a modern look and feel. It also has numerous exciting new features, such as the item page which now uses a carousel and a lightbox to display images.</p>
-                </div>
-
-            </article>
+        <h1>Posts</h1>
+            <ul>
+                {% for post in site.posts %}
+                <li>
+                    <span>{{ post.date | date: "%b %-d, %Y" }}</span>
+                    <h2>
+                        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                    </h2>
+                </li>
+                {% endfor %}
+            </ul>
         </div>
-        <div class="col-md-2"></div>
     </div>
-    <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-            <article class="news">
-                <img src="{{"/images/paintingupdates.jpg" | prepend: site.baseurl}}" width="64" height="64" alt="painting updates">
-
-                <div>
-                    <h4>October 29, 2014</h4>
-
-                    <p class="lead">I am so pleased to announce that I've completed work on 9 more paintings, items 29 through 37, and that they have been added to the <a href="/portfolio"> Portfolio</a> page. If you would like to purchase any of my paintings please contact me using the email link on my <a href="/contact">Contact</a> page and please remember to include the item # in your email.</p>
-                </div>
-
-            </article>
-        </div>
-        <div class="col-md-2"></div>
-    </div>
-    <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-            <article class="news">
-                <img src="{{"/images/paintingupdates.jpg" | prepend: site.baseurl}}" width="64" height="64" alt="painting updates">
-
-                <div>
-                    <h4>May 19, 2014</h4>
-
-                    <p class="lead">I am so pleased to announce that I've completed work on 5 more paintings, items 24 through 28, and that they have been added to the <a href="/portfolio"> Portfolio</a> page. If you would like to purchase any of my paintings please contact me using the email link on my <a href="/contact">Contact</a> page and please remember to include the item # in your email.</p>
-                </div>
-
-            </article>
-        </div>
-        <div class="col-md-2"></div>
-    </div>
-    <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-            <article class="news">
-                <img src="{{"/images/paintingupdates.jpg" | prepend: site.baseurl}}" width="64" height="64" alt="painting updates">
-
-                <div>
-                    <h4>June 23, 2013</h4>
-
-                    <p class="lead">I am excited to announce that I've completed work on 5 more paintings and that they have been added to the <a href="/portfolio"> Portfolio</a> page. If you would like to purchase any of my paintings please contact me using the email link on my <a href="/contact">Contact</a> page and please remember to include the item # in your email.</p>
-                </div>
-
-            </article>
-        </div>
-        <div class="col-md-2"></div>
-    </div>
-    <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-            <article class="news">
-                <img src="{{"/images/artshow.jpg" | prepend: site.baseurl}}" width="64" height="64" alt="painting updates">
-
-                <div>
-                    <h4>April 2013</h4>
-
-                    <p class="lead">I displayed my art work at the <a href="http://www.artmundo.org" target="_blank">Art
-                        Mundo Gallery in Fort Pierce</a> , Florida. The show
-                        was very successful and I sold a number of paintings.</p>
-                    </div>
-
-                </article>
-            </div>
-            <div class="col-md-2"></div>
-        </div>
-
-
-    </div>
+<!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
+</div>
