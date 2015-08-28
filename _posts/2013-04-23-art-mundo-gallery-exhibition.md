@@ -3,7 +3,7 @@ layout: post
 title:  Art Mundo Gallery Exhibition
 date:   2013-04-23
 categories: news update
-img: paintingupdates.jpg
+img: artshow.jpg
 newsitem: true
 ---
 

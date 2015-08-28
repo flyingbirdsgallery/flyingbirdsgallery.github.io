@@ -6,17 +6,14 @@ title: News
 <div class="container">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
-        <h1>Posts</h1>
-            <ul>
-                {% for post in site.posts %}
-                <li>
-                    <span>{{ post.date | date: "%b %-d, %Y" }}</span>
-                    <h2>
-                        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-                    </h2>
-                </li>
-                {% endfor %}
-            </ul>
+        <h1 class="text-center text-hide">News</h1>
+        {% for post in site.posts %}
+        <article class="news">
+            <img src="{{ "/images/" | prepend: site.baseurl }}{{ post.img }}" width="64" height="64"/>
+                <h4><span class="small">{{ post.date | date: "%b %-d, %Y" }}</span> {{ post.title}} </h4>
+                {{ post.content }}
+        </article>
+        {% endfor %}
         </div>
     </div>
 <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
