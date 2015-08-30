@@ -3,8 +3,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="{{ site.description }}">
+    <meta name="keywords" content="{{ site.keywords }}">
+    <meta name="creator" content="{{ site.creator }}">
+    <meta name="publisher" content="{{ site.publisher }}">
+    <meta name="googlebot" content="{{ site.googlebot }}">
+    <meta name="robots" content="{{ site.robots }}">
+    <meta name="slurp" content="{{ site.slurp }}">
     <link rel="icon" href="{{ "/favicon.ico" | prepend: site.baseurl }}">
 
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>

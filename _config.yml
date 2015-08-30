@@ -2,9 +2,18 @@
 title: Flying Birds Gallery
 email: jefftschwartz@gmail.com
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "http://flyingbirdsgallery.github.io/" # the base hostname & protocol for your site
+# twitter_username: jekyllrb
+# github_username:  jekyll
+
+# page meta data
+description: Flying Birds Art Gallery, Flying Birds Gallery
+keywords: American Paintings, American Art, American Artists, Flying Birds, Flying, Bird, Birds, Art Gallery, Art, Gallery, Water oils, Water, Oils, Oil, Paint, Paints, Painting, Canvas, Brush, Marcy Schwartz, Marci Schwartz, Marcy Swartz, Marci Swartz, Marcy Shwartz, Marci Shwartz, Marcy Schwart, Marci Schwart, Marcy Shwart, Marci Shwart
+creator: Jeffrey Schwartz
+publisher: Marcy Schwartz
+googlebot: index, follow
+robots: index, follow
+slurp: index, follow
 
 # Build settings
 markdown: kramdown
