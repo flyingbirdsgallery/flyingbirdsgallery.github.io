@@ -9,26 +9,26 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="{{ "/index.html" | prepend: site.baseurl }}">Flying Birds Gallery</a>
+                <a class="navbar-brand" href="{{ "/" | prepend: site.baseurl }}">Flying Birds Gallery</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li {% if page.title == "Flying Birds Gallery" %} class="active" {% endif %} >
-                        <a href="{{ "/index.html" | prepend: site.baseurl }}">Home</a>
+                        <a href="{{ "/" | prepend: site.baseurl }}">Home</a>
                     </li>
                     <li {% if page.title == "About" %} class="active" {% endif %} >
-                        <a href="{{ "/about.html" | prepend: site.baseurl }}">About</a>
+                        <a href="{{ "/about/" | prepend: site.baseurl }}">About</a>
                     </li>
                     <li {% if page.title == "Portfolio" %} class="active" {% endif %} >
-                        <a href="{{ "/portfolio.html" | prepend: site.baseurl }}">Portfolio</a>
+                        <a href="{{ "/portfolio/" | prepend: site.baseurl }}">Portfolio</a>
                     </li>
                     <li {% if page.title == "News" %} class="active" {% endif %} >
-                        <a href="{{ "/news.html" | prepend: site.baseurl }}">News</a>
+                        <a href="{{ "/news/" | prepend: site.baseurl }}">News</a>
                     </li>
                     <li {% if page.title == "Contact" %} class="active" {% endif %} >
-                        <a href="{{ "/contact.html" | prepend: site.baseurl }}">Contact</a>
+                        <a href="{{ "/contact/" | prepend: site.baseurl }}">Contact</a>
                     </li>
                 </ul>
                 <!-- <ul class="nav navbar-nav navbar-right">
@@ -40,32 +40,32 @@
 
     <ol class="breadcrumb">
         {% if page.newsitem == true %}
-        <li><a href="{{ "/index.html" | prepend: site.baseurl }}">Home</a></li>
-        <li><a href="{{ "/news.html" | prepend: site.baseurl }}">News</a></li>
+        <li><a href="{{ "/" | prepend: site.baseurl }}">Home</a></li>
+        <li><a href="{{ "/news" | prepend: site.baseurl }}">News</a></li>
         <li class="active">News Item</li>
         {% endif %}
         {% if page.title == "Flying Birds Gallery" %}
         <li class="active">Home</li>
         {% endif %}
         {% if page.title == "About" %}
-        <li><a href="{{ "/index.html" | prepend: site.baseurl }}">Home</a></li>
+        <li><a href="{{ "/" | prepend: site.baseurl }}">Home</a></li>
         <li class="active">About</li>
         {% endif %}
         {% if page.title == "Portfolio" %}
-        <li><a href="{{ "/index.html" | prepend: site.baseurl }}">Home</a></li>
+        <li><a href="{{ "/" | prepend: site.baseurl }}">Home</a></li>
         <li class="active">Portfolio</li>
         {% endif %}
         {% if page.title == "News" %}
-        <li><a href="{{ "/index.html" | prepend: site.baseurl }}">Home</a></li>
+        <li><a href="{{ "/" | prepend: site.baseurl }}">Home</a></li>
         <li class="active">News</li>
         {% endif %}
         {% if page.title == "Contact" %}
-        <li><a href="{{ "/index.html" | prepend: site.baseurl }}">Home</a></li>
+        <li><a href="{{ "/" | prepend: site.baseurl }}">Home</a></li>
         <li class="active">Contact</li>
         {% endif %}
         {% if page.title == "Item" %}
-        <li><a href="{{ "/index.html" | prepend: site.baseurl }}">Home</a></li>
-        <li><a href="{{ "/portfolio.html" | prepend: site.baseurl }}">Portfolio</a></li>
+        <li><a href="{{ "/" | prepend: site.baseurl }}">Home</a></li>
+        <li><a href="{{ "/portfolio" | prepend: site.baseurl }}">Portfolio</a></li>
         <li class="active">Item</li>
         {% endif %}
     </ol>
