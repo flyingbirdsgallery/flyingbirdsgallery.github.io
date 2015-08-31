@@ -46,7 +46,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    {% if page.title == 'Item' %}
+    {% if page.title contains 'Item - ' %}
     <!--  colorbox (a lightbox jquery plugin) css -->
     <link rel="stylesheet" href="{{ "/js/lib/colorbox/colorbox.css" | prepend: site.baseurl }}">
     {% endif %}
