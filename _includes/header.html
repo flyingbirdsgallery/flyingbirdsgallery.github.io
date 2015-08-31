@@ -63,7 +63,7 @@
         <li><a href="{{ "/" | prepend: site.baseurl }}">Home</a></li>
         <li class="active">Contact</li>
         {% endif %}
-        {% if page.title == "Item" %}
+        {% if page.title contains "Item - " %}
         <li><a href="{{ "/" | prepend: site.baseurl }}">Home</a></li>
         <li><a href="{{ "/portfolio" | prepend: site.baseurl }}">Portfolio</a></li>
         <li class="active">Item</li>
