@@ -11,6 +11,7 @@
     <meta name="robots" content="{{ site.robots }}">
     <meta name="slurp" content="{{ site.slurp }}">
 
+    {% if page.permalink and page.permalink contains "/portfolio/item/" %}
     <!-- Social Media Meta Tags -->
     <!-- <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@publisher_handle">
@@ -29,6 +30,7 @@
     <meta property="og:site_name" content="Flying Birds Gallery" />
     <meta property="fb:admins" content="Facebook numeric ID" />
     <!-- End Social Media Meta Tags -->
+    {% endif %}    
 
     <link rel="icon" href="{{ "/favicon.ico" | prepend: site.baseurl }}">
 
