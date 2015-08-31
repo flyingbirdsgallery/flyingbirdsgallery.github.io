@@ -2,7 +2,7 @@
 title: Flying Birds Gallery
 email: jefftschwartz@gmail.com
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://flyingbirdsgallery.github.io/" # the base hostname & protocol for your site
+url: "flyingbirdsgallery.github.io/" # the base hostname & protocol for your site
 # twitter_username: jekyllrb
 # github_username:  jekyll
 
