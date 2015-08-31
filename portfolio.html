@@ -20,7 +20,7 @@ permalink: /portfolio/
         {% endif %}
 
                         <div class="col-xs-4">
-                            <a href="{{ "/item#" | prepend: site.baseurl }}{{ img.number }}" class="thumbnail">
+                            <a href="{{ "/portfolio/item/" | prepend: site.baseurl | append: img.number }}" class="thumbnail">
                                 <img src="{{ "/images/portfolio/thumbnails/" | prepend: site.baseurl }}{{ img.thumbnail.name }}"
                                 width="{{ img.thumbnail.width }}" height="{{ img.thumbnail.height }}"
                                 alt="{{ img.thumbnail.name }}" title="click for details" />

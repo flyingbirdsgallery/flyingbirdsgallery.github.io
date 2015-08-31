@@ -1,0 +1,17 @@
+---
+layout: default
+title: Item
+---
+
+<div class="container">
+    <h1 class="text-center text-hide">Item</h1>
+    <img class="img-responsive center-block"
+    src="{{ "/images/portfolio/" | prepend: site.baseurl }}{{ page.image }}"
+    alt="Item {{ page.number }}"
+    title="Item: {{ page.number }}"/>
+    <div>
+        <h4>Item #: <span>{{ page.number }}</span></h4>
+        <h4>Medium: <span>Oil</span></h4>
+        <h4>Orientation: <span>{{ page.orientation }}</span></h4>
+    </div>
+</div>
