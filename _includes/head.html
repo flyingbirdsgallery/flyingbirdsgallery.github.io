@@ -79,7 +79,8 @@
 
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
 
-    <link rel="canonical" href="flyingbirdsgallery.github.io{% if page.title != 'Flying Birds Gallery' %}{{ page.url}}{% else %}/{% endif %}">
+    <link rel="canonical"
+    href="http://flyingbirdsgallery.github.io{% if page.title != 'Flying Birds Gallery' %}{{ page.url}}{% else %}/{% endif %}">
 
     <!-- Bootstrap core CSS included in site.css -->
     <link rel="stylesheet" href="{{ "/css/site.css" | prepend: site.baseurl }}">
